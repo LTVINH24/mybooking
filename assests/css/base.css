@@ -1,0 +1,99 @@
+:root
+{
+    --text-color:#2a2a2e;
+    --white-color:#fff;
+    --primary-color:rgba(1,148,243,1.00);
+    --height-header:105px;
+    --height-book-room:336px;
+    --border-color:#cdd0d1;
+    --height-server-header:43px;
+}
+
+label
+{
+    display: block;
+}
+*{
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+span
+{
+    display: block;
+}
+html
+{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut
+{
+    from
+    {
+        transform: translateX(0);
+    }
+    to
+    {
+        transform: translateX(-100%);
+        
+    }
+}
+
+.btn
+{
+    background-color: rgb(255, 94, 31);
+    color: var(--white-color);
+    font-size: 1.6rem;
+    max-width: 100%;
+    max-height: 45px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover
+{
+    filter: brightness(80%);
+}
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 15;
+    display: none;
+    animation: see linear 0.2s;
+}
+.modal.active
+{
+    display: block;
+}
+
+@keyframes see{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
